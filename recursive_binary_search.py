@@ -23,6 +23,9 @@ result = recursive_binary_search(numbers, 8)
 verify(result)
 result = recursive_binary_search(numbers, 19)
 verify(result)
+
+result = recursive_binary_search(numbers, 3)
+verify(result)
     
 
 
