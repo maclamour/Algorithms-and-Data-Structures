@@ -39,3 +39,13 @@ def size(self):
         current = current.next_node
 
     return count
+
+def add(self,data):
+    """
+    Adds new Node contanining data at head of the list 
+    Takes 0(1) time
+    """
+
+    new_node= Node(data)
+    new_node.next_node = self.head
+    self.head = new_node
