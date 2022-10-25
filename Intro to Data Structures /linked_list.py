@@ -14,5 +14,28 @@ def __repr__(self):
 
 class LinkedList:
 
+    """
+    Singly linked list
+    """
+
     def __init__(self):
-        self.head = None
+        self.head = None 
+
+
+def is_empty(self):
+    return self.head is None
+
+def size(self):
+    """
+    Returns the number of nodes in the linked list.
+    Takes 0(n) time
+    """
+
+    current = self.head
+    count = 0
+
+    while current:
+        count += 1
+        current = current.next_node
+
+    return count
